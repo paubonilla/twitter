@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NewPost() {
+function NewPost({onNewTweet}) {
     return (
         <div>
             <div className='home'>Home</div>
@@ -20,7 +20,7 @@ function NewPost() {
                             <i class="fa fa-smile-o icon" aria-hidden="true"></i>
                         </div>
                         <div className='button-component'>
-                            <button className='status-button'>Tweet</button>
+                            <button className='status-button' onClick={onNewTweet}>Tweet</button>
                         </div>
                     </div>
                 </div>
