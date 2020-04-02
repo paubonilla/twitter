@@ -18,6 +18,7 @@
 }
 
 .nav {
+  position: fixed;
   padding-right: 60px;
 }
 
@@ -385,8 +386,9 @@
 }
 
 .sidebarColumn {
+  position: fixed;
   height: 100vh;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .search-bar {

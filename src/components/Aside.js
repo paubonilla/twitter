@@ -11,7 +11,7 @@ function Aside() {
                 <div className='trend-section'>
                     <div className='trend-container'>
                         <div className='trend-header'>Trends for you</div>
-                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <i className="fa fa-cog" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div className='suggestion'>

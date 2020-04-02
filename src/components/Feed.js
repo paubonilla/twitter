@@ -1,19 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-
-function Feed({tweets}) {
-    const [userName, setUserName] = useState('Pau');
-   
+const Feed = ({tweets}) => {
+    console.log({tweets})
     return (
         <div>
-            {/* <button onClick={ e => setTweets(tweets.concat({userName: 'Paulo', tweet: "24-5"})) }>tweet</button> */}
             {
                 tweets.map(tweet => (
                     <>
                         <div className='feed'>
                             <div className='user'>
-                                <div className='user-icon' onClick={e => setUserName('Kahit ano')}></div>
-                                {/* <input type="text" name="" id="" value={userName} onChange={e => setUserName(e.target.value)}/> */}
+                                {/* <div className='user-icon' onClick={e => setUserName('Kahit ano')}></div> */}
                             </div>
                             <div className='user-component'>
                                 <div className='user-data'>
@@ -26,10 +22,10 @@ function Feed({tweets}) {
                                         <div>{tweet.tweet}</div>
                                         <div className='upload-img'></div>
                                         <div className='user-status__button'>
-                                            <i class="fa fa-retweet" aria-hidden="true"></i>
-                                            <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                            <i class="fa fa-share" aria-hidden="true"></i>
+                                            <i className="fa fa-retweet" aria-hidden="true"></i>
+                                            <i className="fa fa-comment-o" aria-hidden="true"></i>
+                                            <i className="fa fa-heart-o" aria-hidden="true"></i>
+                                            <i className="fa fa-share" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
